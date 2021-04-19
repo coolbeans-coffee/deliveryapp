@@ -11,6 +11,10 @@ def beans(): # Build a function called "home"
 @app.route('/delivery') # URL Route
 def delivery(): # Build a function called "delivery"
     return render_template('delivery.html') # Return strings to a desired url
+
+@app.route('/menu') # URL Route
+def menu(): # Build a function
+    return render_template('menu.html') # Return strings to a desired url
     
 if __name__ == '__main__':
     app.run(debug=True)
